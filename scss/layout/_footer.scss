@@ -1,0 +1,46 @@
+@use '../setting/setting' as s;
+@use '../setting/responsive' as r;
+
+.footer {
+  background-color: #525660;
+  color: s.$color-text-white;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.4rem;
+  @include r.mq("sp") {
+    font-size: 1.2rem;
+  }
+}
+
+.panda-icon {
+  width: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#page_top {
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+
+  @include r.mq("sp") {
+    right: 2.5rem;
+    bottom: 1.6rem;
+  }
+
+  a {
+    color: #e9b2c9;
+    display: block;
+    background-color: transparent;
+    @include r.mq("sp") {
+      }
+    }
+  }
+
+

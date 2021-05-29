@@ -1,0 +1,74 @@
+@use '../setting/setting' as s;
+@use '../setting/responsive' as r;
+@use "sass:map";
+
+//remで指定
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  html {
+    font-size: 0.625vw;
+  }
+}
+
+
+body {
+  font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", "メイリオ",
+    Meiryo, "Arial", sans-serif;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  padding-top: s.$header-height-pc; //ヘッダーの高さ分の余白
+
+  @include r.mq("sp") {
+    padding-top: s.$header-height-sp; //ヘッダーの高さ分の余白
+  }
+}
+/*  インナー
+-----------------------------------------------------*/
+.inner {
+  width: s.$layout-width-inner;
+  max-width: 100%;
+  margin: 0 auto;
+  height: inherit;
+
+  @include r.mq("tab") {
+    padding-left: s.$padding-tab;
+    padding-right: s.$padding-tab;
+  }
+
+  @include r.mq("sp") {
+    padding-left: s.$padding-sp;
+    padding-right: s.$padding-sp;
+  }
+}
+
+/*  非表示
+-----------------------------------------------------*/
+// PCだけ非表示
+.hidden-pc {
+  @include r.mq("pc") {
+    display: none;
+  }
+}
+
+// タブレットだけ非表示
+.hidden-tab {
+  @include r.mq("tab") {
+    display: none;
+  }
+}
+
+// スマホだけ非表示
+.hidden-sp {
+  @include r.mq("sp") {
+    display: none;
+  }
+}
