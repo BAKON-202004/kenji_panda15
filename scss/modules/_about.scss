@@ -1,0 +1,57 @@
+@use '../setting/setting' as s;
+@use '../setting/responsive' as r;
+
+.about {
+}
+
+.about__inner {
+}
+
+.about__contents {
+  margin-top: 4rem;
+  display: flex;
+  @include r.mq("sp") {
+    display: block;
+    flex-direction: column;
+  }
+}
+
+.about__img {
+  display: block;
+  width: 48%;
+  margin: 0 auto;
+  @include r.mq("sp") {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}
+
+.about__text {
+  padding: 4rem;
+  display: 1;
+  line-height: 2;
+  
+  @include r.mq("sp") {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  p {
+    font-size: 2rem;
+
+    @include r.mq("sp") {
+      font-size: 1.6rem;
+      text-align-last: left;
+      line-height: 1.7;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: skyblue;
+  }
+
+}
+
+

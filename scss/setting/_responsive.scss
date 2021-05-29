@@ -1,0 +1,15 @@
+@use 'sass:map'; //map-get関数使用
+
+//ブレークポイント
+$breakpoints: (
+  "sp": "(max-width: 767px)",
+  "tab": "(min-width: 768px) and (max-width: 1100px)",
+  "pc": "(min-width: 1101px)",
+);
+//メディアクエリー
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+

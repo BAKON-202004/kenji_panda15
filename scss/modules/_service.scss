@@ -1,0 +1,93 @@
+@use '../setting/setting' as s;
+@use '../setting/responsive' as r;
+
+.service {
+  background-color: s.$color-main;
+}
+
+.service__inner {
+}
+
+.service__items {
+  margin-top: 8rem;
+  padding-left: 0;
+  display: flex;
+  @include r.mq("sp") {
+    display: block;
+    flex-direction: column;
+  }
+
+}
+
+.service__item {
+  width: calc(
+    33.3% - 2.4rem * 2 / 3
+  ); //（100% / カード枚数 - 余白の幅 * 余白の数 / カード枚数 )
+  margin-right: 2.4rem;
+  height: 38rem;
+  max-width: 100%;
+  padding: 1.8rem 2.5rem;
+  background-color: #fff;
+  border-radius: 6px;
+  list-style: none;
+
+  &:nth-child(3n) {
+    margin-right: 0; //3の倍数のカードは右余白なし
+  }
+
+  @include r.mq("tab") {
+    width: calc(50% - 2.4rem / 2);
+    margin-right: 2.4rem;
+
+    &:nth-child(3n) {
+      // margin-right: 2.4rem; //3の倍数のカードは余白あり
+    }
+
+    &:nth-child(2n) {
+      // margin-right: 0; //2の倍数のカードは余白なし
+    }
+  }
+
+  @include r.mq("sp") {
+    width: 100%;
+    margin-top: 2rem;
+    margin-right: 0; //余白なし
+
+    &:nth-child(3n) {
+      margin-right: 0; //余白なし
+    }
+  }
+}
+.service__img {
+  border-radius: 6px;
+  padding: 5rem;
+  text-align: center;
+  &.img1 {
+    background-color: #809da6;
+  }
+  &.img2 {
+    background-color: #cba4b5;
+  }
+  &.img3 {
+    background-color: #e3cec3;
+  }
+}
+
+.service__subtitle {
+  padding-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.service__text {
+  font-size: 1.6rem;
+  text-align: left;
+  letter-spacing: 1.2px;
+}
+
+.service__price {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 2rem;
+}

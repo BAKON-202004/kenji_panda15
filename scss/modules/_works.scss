@@ -1,0 +1,57 @@
+@use '../setting/setting' as s;
+@use '../setting/responsive' as r;
+
+.works {
+}
+
+.works__inner {
+}
+
+.works__items {
+  margin-top: 6rem;
+  display: flex;
+  @include r.mq("sp") {
+    display: inline-block;
+    flex-direction: column;
+  }
+}
+
+.works__item {
+  font-size: 1.6rem;
+  text-align: center;
+  width: calc(
+    33.3% - 2.4rem * 2 / 3
+  ); //（100% / カード枚数 - 余白の幅 * 余白の数 / カード枚数 )
+  margin-right: 2.4rem;
+  height: 25rem;
+  max-width: 100%;
+
+  &:nth-child(3n) {
+    margin-right: 0; //3の倍数のカードは右余白なし
+  }
+
+  @include r.mq("tab") {
+    width: calc(50% - 2.4rem / 2);
+    margin-right: 2.4rem;
+
+    &:nth-child(3n) {
+      // margin-right: 2.4rem; //3の倍数のカードは余白あり
+    }
+
+    &:nth-child(2n) {
+      // margin-right: 0; //2の倍数のカードは余白なし
+    }
+  }
+
+  @include r.mq("sp") {
+    width: 100%;
+    margin-top: 4rem;
+    margin-right: 0; //余白なし
+
+    &:nth-child(3n) {
+      margin-right: 0; //余白なし
+    }
+  }
+
+
+}

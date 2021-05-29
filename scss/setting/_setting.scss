@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*  カラー
+-----------------------------------------------------*/
+$color-main: #e6e3cf; // ベース色
+$color-active: #e02cbe; // アクティブ色
+$color-background-base: #ffffff; // 背景色
+$color-background-menu: #35363a; //ハンバーガーメニュー背景色
+$color-text-black: #333333; // テキスト色
+$color-text-white: #ffffff; // テキスト色
+
+/*  透過度
+-----------------------------------------------------*/
+$hover-opacity: 0.6;
+
+/*  レイアウト幅
+-----------------------------------------------------*/
+$layout-width-canvas: 1280px;
+$layout-width-inner: 1200px;
+
+/*  階層
+-----------------------------------------------------*/
+$layer: (
+  modal: 100,
+  drawer: 40,
+  floating: 30,
+  header: 20,
+  footer: 10,
+  default: 1,
+);
+
+/*  余白
+-----------------------------------------------------*/
+$padding-pc: 24px;
+$padding-tab: 24px;
+$padding-sp: 16px;
+
+/*  ヘッダー高さ
+-----------------------------------------------------*/
+$header-height-pc: 10rem;
+$header-height-sp: 6rem;

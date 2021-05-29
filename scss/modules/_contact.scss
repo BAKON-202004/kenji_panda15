@@ -1,0 +1,176 @@
+@use '../setting/setting' as s;
+@use '../setting/responsive' as r;
+
+.contact {
+}
+
+.contact__inner {
+  color: s.$color-text-black;
+}
+
+.contact__text {
+  margin-top: 8rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.contact__icons {
+  margin-top: 3rem;
+}
+
+.contact__icon {
+  text-align: center;
+  a {
+    display: inline-block;
+    color: skyblue;
+  }
+}
+
+.contact__form {
+  margin: 3rem auto 0;
+  width: 80rem;
+  font-size: 1.6rem;
+  max-width: 100%;
+  background: #fff;
+  padding: 3rem;
+
+  @include r.mq("sp") {
+    margin-top: 2rem;
+    padding: 2.4rem;
+  }
+}
+
+.contact-form__dl {
+}
+
+.contact-form__row {
+  display: flex;
+
+  @include r.mq("sp") {
+    display: block;
+  }
+
+  &:not(:first-child) {
+    //最初の行以外はmargin-top60px
+    margin-top: 6rem;
+
+    @include r.mq("sp") {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.contact-form__label {
+  width: 16rem; 
+  padding-top: 0.5rem;
+
+  @include r.mq("sp") {
+    width: 100%;
+  }
+
+  label {
+    font-weight: 700;
+
+    &.is-required {
+      display: inline-block;
+      position: relative;
+      
+      &::after {
+        width: 5rem;
+        content: "必須";
+        position: absolute;
+        top: calc(100% + 0.2rem);
+        left: 0;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #fff;
+        background: s.$color-active;
+        text-align: center;
+        border-radius: 4px;
+        padding: 0.3rem 0.8rem;
+        line-height: 1;
+
+        @include r.mq("sp") {
+          left: calc(100% + 6px);
+          top: 50%;
+          transform: translateY(-50%);
+          width: 44px;
+        }
+      }
+    }
+  }
+}
+
+/*  テキスト・Eメール・セレクト・テキストエリア
+-----------------------------------------------------*/
+.contact-form__input {
+  width: calc(100% - 16rem);
+
+  @include r.mq("sp") {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  [type="text"] {
+    box-shadow: none;
+    border: 1px solid #707070;
+    background: #fff;
+    padding: 1rem 1.6rem;
+    appearance: none; //初期化
+    border-radius: 0;
+    color: inherit;
+    font-family: inherit; //初期化
+    font-size: 1.4rem;
+    width: 100%;
+  }
+
+  [type="email"] {
+    box-shadow: none;
+    border: 1px solid #707070;
+    background: #fff;
+    padding: 1rem 1.6rem;
+    appearance: none; //初期化
+    border-radius: 0;
+    color: inherit;
+    font-family: inherit; //初期化
+    font-size: 1.4rem;
+    width: 100%;
+  }
+
+  textarea {
+    height: 24rem;
+    resize: none; //サイズ可変無し
+    box-shadow: none;
+    border: 1px solid #707070;
+    background: #fff;
+    padding: 1rem 1.6rem;
+    appearance: none; //初期化
+    border-radius: 0;
+    color: inherit;
+    font-family: inherit; //初期化
+    font-size: 1.4rem;
+    width: 100%;
+  }
+}
+
+/*  送信ボタン
+-----------------------------------------------------*/
+.contact-form__button {
+  margin-top: 30px;
+  text-align: center;
+
+  [type="submit"] {
+    background: s.$color-main;
+    width: 30rem;
+    display: inline-block;
+    font-weight: 700;
+    color: s.$color-text-black;
+    padding: 1.4rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+    appearance: none; //初期化
+    font-family: inherit; //初期化
+    border: none; //初期化
+    font-size: 1.6rem;
+  }
+}

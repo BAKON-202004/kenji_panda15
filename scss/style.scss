@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+// レイアウト
+@use 'layout';
+
+// モジュール
+@use 'modules';
+
+// page
+// @use './page';
+
+// 変数
+@use 'setting/responsive';
+@use "setting/setting";

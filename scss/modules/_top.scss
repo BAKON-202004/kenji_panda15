@@ -1,0 +1,35 @@
+@use '../setting/setting' as s;
+@use '../setting/responsive' as r;
+
+.top {
+  margin: 0;
+  padding: 0;
+  height: 80rem;
+  width: 100%;
+  background: transparent url(../../img/top-bg.jpg) no-repeat top center / cover;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 -1px #333, 0 -2px #333, 0 8px 15px rgba(0, 0, 0, 0.7);
+  @include r.mq("sp") {
+    height: 40rem
+  }
+}
+
+.top__contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%; //改行を防ぐ
+}
+
+.top__title {
+  font-size:7.6rem;
+  font-weight: 700;
+  color: #fc0;
+
+  @include r.mq("sp") {
+    font-size: 5.2rem;
+  }
+}

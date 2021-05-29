@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenji ポートフォリオサイト</title>
+  <meta name="description" content="Kenjiのポートフォリオサイトです">
+  <link rel="icon" href="./img/kenji.panda.png">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css"
+    media="all">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Kenjiのポートフォリオサイトです" />
+  <meta name="author" content="kenji" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:title" content="Kenji-portfolio" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@Kenji_cl15" />
+  <meta name="twitter:creator" content="@Kenji_cl15" />
+  <meta property="og:description" content="Kenjiのポートフォリオサイトです。Web制作を頑張っている人は必ず見てください。元気が出ます。" />
+  <meta property="og:url" content="ページのURL" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://godpanda15.com/img/kenji_panda.png" />
+  <meta property="og:image:width" content="1230" />
+  <meta property="og:image:height" content="600" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="#"><img src="./img/kenji_logo.png" alt="kenjiのロゴ"></a>
+      </h1>
+      <ul class="header__nav hidden-sp">
+        <li><a href="#about">私について</a></li>
+        <li><a href="#service">サービス</a></li>
+        <li><a href="#works">制作実績</a></li>
+        <li><a class="far fa-envelope fa-lg address" href="#contact">お問い合わせ</a></li>
+      </ul>
+      <!-- tab/sp -->
+      <div class="hamburger hidden-pc hidden-tab">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="globalMenuSp">
+        <ul>
+          <li><a href="#about">私について</a></li>
+          <li><a href="#service">サービス</a></li>
+          <li><a href="#works">制作実績</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="top">
+      <div class="top__contents">
+        <p class="top__title wow fadeInUp">Are you excited?</p>
+      </div>
+    </div>
+
+    <section id="about" class="about section">
+      <div class="about__inner inner">
+        <h2 class="section-title">
+          <p class="section__title__jp  wow fadeInUp">私について</p>
+          <p class="section__title__en  wow fadeInUp">about me</p>
+        </h2>
+        <div class="about__contents  wow fadeInUp">
+          <img class="about__img" src="./img/kenji.panda.png" alt="けんじの画像">
+          <div class="about__text">
+            <p>
+              ご覧頂き誠にありがとうございます。Kenjiと申します。<br>
+              大学を卒業後10年間、配送のお仕事をしていました。
+              ITとは無縁な業種にいましたが、お客様にきちんと商品を届ける！
+              という意味では、Web制作と通じるところがあると思います（無理やり感がありますが笑）。<br>
+              配送の人と聞くとオラオラ系のイメージがあるかもしれないので、宜しければ私の<a href="https://twitter.com/Kenji_cl15"><i
+                  class="fab fa-twitter"></i>Twitter</a>で楽しい呟きをご覧頂けたら、
+              私がどんな愉快な人物か分かるかと思います。<br>
+              仕事に対してはきっちりと誠心誠意、皆様のビジネスに貢献していきますので、どうぞ宜しくお願いします。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="service section">
+      <div class="service__inner inner">
+        <h2 class="section-title">
+          <p class="section__title__jp  wow fadeInUp">サービス</p>
+          <p class="section__title__en  wow fadeInUp">service</p>
+        </h2>
+        <ul class="service__items  wow fadeInUp">
+          <li class="service__item   wow fadeInUp">
+            <div class="service__img img1">
+              <i class="fas fa-code fa-4x"></i>
+            </div>
+            <div class="service__subtitle">
+              <p>マークアップ</p>
+            </div>
+            <div class="service__text">
+              <p>HTML、CSSを用いたマークアップを行います。JavaScript（jQuery）を用いて動きのあるサイト構築も可能です。</p>
+            </div>
+          </li>
+          <li class="service__item  wow fadeInUp">
+            <div class="service__img img2">
+              <i class="fab fa-wordpress-simple fa-4x"></i>
+            </div>
+            <div class="service__subtitle">
+              <p>WordPressサイト改修</p>
+            </div>
+            <div class="service__text">
+              <p>既存のHTMLで作られたサイトをWordPressのサイトに改修いたします。記事の追加や編集作業、画像や動画の挿入を簡単に行いたい、これらのご要望にお答えします。</p>
+            </div>
+          </li>
+          <li class="service__item  wow fadeInUp">
+            <div class="service__img img3">
+              <i class="fas fa-desktop fa-4x"></i>
+            </div>
+            <div class="service__subtitle">
+              <p>LP制作</p>
+            </div>
+            <div class="service__text">
+              <p>ランディングページ(LP)を作成します。私が最も得意としています。ビジネスの顔となる部分ですので、きめ細かい部分まで再現していきます。</p>
+            </div>
+          </li>
+        </ul>
+        <p class="service__price">※料金はお気軽にご相談下さい。</p>
+      </div>
+    </section>
+
+    <section id="works" class="works section">
+      <div class="works__inner inner">
+        <h2 class="section-title">
+          <p class="section__title__jp  wow fadeInUp">制作実績</p>
+          <p class="section__title__en  wow fadeInUp">works</p>
+        </h2>
+        <ul class="works__items">
+          <li class="works__item  wow fadeInUp">
+            <a href=""><img src="./img/kenji-portfolio.png"></a>
+            <p>kenjiのポートフォリオ</p>
+          </li>
+          <li class="works__item  wow fadeInUp">
+            <a href=""><img src="./img/Root.png"></a>
+            <p>架空の美容室のホームページ</p>
+          </li>
+          <li class="works__item  wow fadeInUp">
+            <a href=""><img src="./img/gokurakutei.png"></a>
+            <p>架空の旅館のホームページ</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="contact__inner inner">
+        <h2 class="section-title">
+          <p class="section__title__jp  wow fadeInUp">お問い合せ</p>
+          <p class="section__title__en  wow fadeInUp">contact</p>
+        </h2>
+        <div class="contact__text">
+          <p>※コンタクトフォームは閉鎖しております！<br>
+            お問い合せはTwitterのDMから宜しくお願いします。</p>
+        </div>
+        <ul class="contact__icons">
+          <li class="contact__icon wow fadeInUp">
+            <a href="https://twitter.com/Kenji_cl15"><i class="fab fa-twitter fa-4x icon"></i></a>
+          </li>
+        </ul>
+        <div class="contact__form">
+          <form class="contact-form" action="#">
+            <dl class="contact-form__dl">
+              <!--テキスト-->
+              <div class="contact-form__row">
+                <dt class="contact-form__label"><label for="your-name" class="is-required">お名前</label></dt>
+                <dt class="contact-form__input"><input id="your-name" type="text" placeholder="大熊猫 太郎"></dt>
+              </div>
+
+              <!--Eメール-->
+              <div class="contact-form__row">
+                <dt class="contact-form__label"><label for="your-email" class="is-required">メールアドレス</label></dt>
+                <dd class="contact-form__input"><input id="your-email" type="email" placeholder="text@example.com"></dd>
+              </div>
+
+              <!--テキストエリア -->
+              <div class="contact-form__row">
+                <dt class="contact-form__label"><label for="your-message" class="is-required">お問い合わせ内容</label></dt>
+                <dd class="contact-form__input"><textarea name="" id="your-message"
+                    placeholder="お問い合わせを入力してください"></textarea></dd>
+              </div>
+            </dl>
+
+            <!-- 送信ボタン -->
+            <div class="contact-form__button">
+              <input type="submit" value="送信する">
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner inner">
+        <img class="panda-icon" src="./img/panda.png" alt="パンダの画像">
+        <div class="footer__copy">Copyright &copy; 2021 Kenji All rights reserved.</div>
+      </div>
+    </footer>
+
+    <div id="page_top">
+      <a href="#"><i class="fas fa-arrow-circle-up fa-5x"></i></a>
+    </div>
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- script.js -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
